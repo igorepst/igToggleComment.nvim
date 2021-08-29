@@ -36,7 +36,6 @@ _M.toggleComment = function(mode)
     if hl then
         vim.api.nvim_buf_set_lines(0, line_number_start - 1, line_number_end, false, lines)
         vim.fn.cursor(line_number_end, 0)
-        vim.api.nvim_command('nohlsearch')
     end
 end
 
