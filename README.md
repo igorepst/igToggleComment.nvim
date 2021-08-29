@@ -5,16 +5,16 @@ Supports ['commentstring'](https://vimhelp.org/options.txt.html#%27commentstring
 
 ## Installation
 
-ex., via [packer.nvim](https://github.com/wbthomason/packer.nvim):
+ex., via [packer.nvim](https://github.com/wbthomason/packer.nvim) with lazy loading:
 
-            use({'~/github/igToggleComment.nvim'})
+    use({ 'igorepst/igToggleComment.nvim', keys = { '<Plug>(IgToggleComment)' } })
 
 ## Possible mappings:
 
-            --  Actually 'C-/' and not 'C-_'
-            vim.api.nvim_set_keymap('n', '<C-_>', '<Plug>(IgToggleComment)', { noremap = false })
-            vim.api.nvim_set_keymap('v', '<C-_>', '<Plug>(IgToggleComment)', { noremap = false })
-            vim.api.nvim_set_keymap('i', '<C-_>', '<Plug>(IgToggleComment)', { noremap = false })
+    --  Actually 'C-/' and not 'C-_'
+    vim.api.nvim_set_keymap('n', '<C-_>', '<Plug>(IgToggleComment)', { noremap = false })
+    vim.api.nvim_set_keymap('v', '<C-_>', '<Plug>(IgToggleComment)', { noremap = false })
+    vim.api.nvim_set_keymap('i', '<C-_>', '<Plug>(IgToggleComment)', { noremap = false })
 
 Pay attention, `<Plug>` requires `noremap = false`
 
